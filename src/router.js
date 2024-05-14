@@ -30,7 +30,7 @@ const router = createRouter({
 });
 
 // GLOBAL NAVIGATION GUARD
-// if the person wants to visit a page that they needs authentication for, but they are not authenticated, they are redirected to the auth page
+// if the person wants to visit a page that they need authentication for, but they are not authenticated, they are redirected to the auth page
 // in the else case we allow the navigation
 router.beforeEach(function(to, _, next) {
   // we check the route we are going to if it has any special meta data, requiresAuth and requiresUnauth, that we assigned in the paths
